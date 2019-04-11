@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8"/>
+    <script src="Leetcode_Solution.js"></script>
+  </head>
+
+  <body>
+    <div id="output">Hello Plunker!</div>
+  </body>
+
+  <script>
+  'use strict';
+  let output = document.getElementById("output");
+  output.innerText =   "=======Start========\n";
+
+  Solution.permuteUnique([]).forEach((elm) => output.innerText += "["+elm+"], ");
+  output.innerText +=   "\n>>>>>>>>>>>>>>>>>>\n";
+  Solution.permuteUnique([1]).forEach((elm) => output.innerText += "["+elm+"], ");
+  output.innerText +=   "\n>>>>>>>>>>>>>>>>>>\n";
+  Solution.permuteUnique([1,2,2]).forEach((elm) => output.innerText += "["+elm+"], ");
+  output.innerText +=   "\n>>>>>>>>>>>>>>>>>>\n";
+
+  output.innerText +="\n========End=========";
+  </script>
+</html>
